@@ -1,0 +1,21 @@
+{% extends 'ERP/main.html' %}
+
+{%  block content %}
+
+    <div class="ward card-body">
+        <div class="form-group">
+            <form action="" method="POST">
+
+
+                    {% csrf_token %}
+                    {{ form.as_p}}
+
+                    <input type="submit" value="Enregistrer">
+
+
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

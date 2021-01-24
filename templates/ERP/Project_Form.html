@@ -1,0 +1,73 @@
+{% extends 'ERP/main.html' %}
+
+{%  block content %}
+
+    <form >
+        <div class="form-group">
+            <div class="card card-body">
+
+                <div class="form-row">
+
+                    <div class="col">
+                            <label for="N° de dossier"> N° de dossier
+                                <input type="number" name="file_number" value="{{ file_number }}">
+                            </label>
+                    </div>
+
+                    <div class="col">
+                            <label for="N° de contrat"> N° de contrat
+                                <input type="number" name="contract_number" value="{{ contract_number }}">
+                            </label>
+                    </div>
+
+                </div>
+
+
+                <br>
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for="Raison Sociale"> Raison Sociale
+                            <input type="text" name="company_name">
+                        </label>
+                    </div>
+
+                    <div class="col">
+                        <label for="SIREN"> SIREN
+                            <input type="number" name="SIREN">
+                        </label>
+                    </div>
+
+                </div>
+
+                <br>
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for="Adresse"> Adresse
+                            <input type="text" name="company_address">
+                        </label>
+                    </div>
+
+                    <div class="col">
+                        <label for="Telephone"> Tél
+                            <input type="text" name="telephone">
+                        </label>
+                    </div>
+
+                </div>
+
+                <br>
+
+            </div>
+
+            <br>
+                <button>Enregistrer</button>
+
+        </div>
+
+    </form>
+
+
+{% endblock %}
+

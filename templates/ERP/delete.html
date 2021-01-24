@@ -1,0 +1,25 @@
+{% extends 'ERP/main.html' %}
+
+{%  block content %}
+
+    <div class="row">
+        <div class="col-md-6">
+           <div class="'ward card-body">
+
+               <p>Confirmer la suppression du dossier "{{ item }}"? </p>
+
+                <form action="{% url 'supprimer_dossier' item.id %}" method='POST'>
+                    {% csrf_token %}
+
+                    <a class="btn btn-warning" href="{% url 'creer_dossier' %}">Annuler</a>
+
+                    <input class="btn btn-danger" type="submit" value="Confirmer">
+                </form>
+
+           </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
